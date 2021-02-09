@@ -14,3 +14,7 @@ jobs:
           java-version: 1.8
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
+        env:
+          MAVEN_USERNAME: confidence
+          MAVEN_PASSWORD: confidence@1
+
