@@ -13,8 +13,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Logando no nexus
-          run: |
-            mkdir -p ~/.m2
+          run: mkdir -p ~/.m2
             echo "<settings><servers><server><id>confidence</id><username>confidence/username><password>confidence</password></server></servers></settings>" > ~/.m2/settings.xml
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
