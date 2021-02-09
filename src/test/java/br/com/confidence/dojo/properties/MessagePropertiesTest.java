@@ -20,7 +20,7 @@ class MessagePropertiesTest {
     public void testaOrdenacao() {
         ArrayList<String> chavesOrdenadas =
                 new MessageProperties("messagesTest.properties").ordenaMessages();
-        assertThat(chavesOrdenadas, contains("b", "f", "w", "f"));
+        assertThat(chavesOrdenadas, contains("b", "f", "v", "w"));
     }
 
     @Test
