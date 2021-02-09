@@ -21,7 +21,5 @@ jobs:
           server-username: confidence  # env variable name for username of Artifactory server; value can be anything as it is a transient user
           server-password: confidence@1 # env variable name for Artifactory access token
             # after running this action, the <username> tag contains ${env.ARTIFACTORY_USERNAME_REF} and <password> contains ${env.ARTIFACTORY_TOKEN_REF}
-
-
-        - name: Build with Maven
+      - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
