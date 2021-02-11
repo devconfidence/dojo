@@ -16,7 +16,7 @@ import static org.hamcrest.Matchers.contains;
 
 class MessagePropertiesTest {
 
-    @Test
+    //@Test
     public void testaOrdenacao() {
         ArrayList<String> chavesOrdenadas =
                 new MessageProperties("messagesTest.properties").ordenaMessages();
